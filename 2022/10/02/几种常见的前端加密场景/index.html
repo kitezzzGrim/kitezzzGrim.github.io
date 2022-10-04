@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta name="generator" content="Hugo 0.89.4" />
+  <meta charset="utf-8">
+  <title>几种常见的前端加密场景 · kitezzzGrim</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="首发: https://www.anquanke.com/post/id/280470 五种常见的前端加密场景 前端的加解密是比较常见的，无论是web的后台，还是小程序，都常常存在，加解密传输，签名，防篡改，这些机制，导致" />
+
+  <meta name="keywords" content="Hugo, theme, den" />
+
+<link rel="canonical" href="https://kitezzzgrim.ffffffff0x.com/2022/10/02/%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E7%9A%84%E5%89%8D%E7%AB%AF%E5%8A%A0%E5%AF%86%E5%9C%BA%E6%99%AF/" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://kitezzzgrim.ffffffff0x.com/css/den.css">
+
+
+
+
+<meta property="og:title" content="几种常见的前端加密场景" />
+<meta property="og:description" content="首发: https://www.anquanke.com/post/id/280470 五种常见的前端加密场景 前端的加解密是比较常见的，无论是web的后台，还是小程序，都常常存在，加解密传输，签名，防篡改，这些机制，导致" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kitezzzgrim.ffffffff0x.com/2022/10/02/%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E7%9A%84%E5%89%8D%E7%AB%AF%E5%8A%A0%E5%AF%86%E5%9C%BA%E6%99%AF/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-02T00:54:13+08:00" />
+<meta property="article:modified_time" content="2022-10-02T00:54:13+08:00" />
+
+<meta itemprop="name" content="几种常见的前端加密场景">
+<meta itemprop="description" content="首发: https://www.anquanke.com/post/id/280470 五种常见的前端加密场景 前端的加解密是比较常见的，无论是web的后台，还是小程序，都常常存在，加解密传输，签名，防篡改，这些机制，导致"><meta itemprop="datePublished" content="2022-10-02T00:54:13+08:00" />
+<meta itemprop="dateModified" content="2022-10-02T00:54:13+08:00" />
+<meta itemprop="wordCount" content="1165">
+<meta itemprop="keywords" content="notes," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="几种常见的前端加密场景"/>
+<meta name="twitter:description" content="首发: https://www.anquanke.com/post/id/280470 五种常见的前端加密场景 前端的加解密是比较常见的，无论是web的后台，还是小程序，都常常存在，加解密传输，签名，防篡改，这些机制，导致"/>
+</head>
+<body>
+  
+  <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://kitezzzgrim.ffffffff0x.com/images/background.jpg'); background-position: center; background-size: cover;">
+  <div class="container">
+  <nav class="header-nav navbar navbar-expand-md navbar-dark light-dark">
+    <div class="header-logo navbar-brand">
+      
+        <a class="float-left" href="https://kitezzzgrim.ffffffff0x.com/">
+      
+        
+        
+          kitezzzGrim
+         
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav-menu collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            
+              
+                <a class="nav-link" href="https://kitezzzgrim.ffffffff0x.com/category/notes/">笔记</a>
+              
+            
+          </li>
+        
+          <li class="nav-item">
+            
+              <a class="nav-link" href="https://kitezzzgrim.ffffffff0x.com/about/">About</a>
+            
+          </li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="container header-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="header-content">
+        <h1 class="header-title">几种常见的前端加密场景</h1>
+        <p class="header-date">作者：
+          kitezzzGrim /
+        
+        2022-10-02
+          / 分类：
+          <a href="https://kitezzzgrim.ffffffff0x.com/category/notes/">Notes</a>
+        </p>
+        
+        <div class="header-underline"></div>
+        
+          <div class="clearfix"></div>
+          <p class="float-right header-tags">
+              <i class="fas fa-tags" aria-hidden="true"></i>
+              <a href="https://kitezzzgrim.ffffffff0x.com/tag/notes/">notes</a>
+          </p>
+        
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <main>
+<div class="container content">
+  <article>
+  <blockquote>
+<p>首发: <a href="https://www.anquanke.com/post/id/280470">https://www.anquanke.com/post/id/280470</a></p>
+</blockquote>
+<h1 id="五种常见的前端加密场景">五种常见的前端加密场景</h1>
+<p>前端的加解密是比较常见的，无论是web的后台，还是小程序，都常常存在，加解密传输，签名，防篡改，这些机制，导致很多时候测试人员没有办法直接对参数的值进行更改，确实增加了攻击者的攻击成本。</p>
+<p>本文结合一些实践案例，总结一些常见的前端加密场景</p>
+<h2 id="md5-案例">MD5 案例</h2>
+<p>很常规的一个登录页面，抓包查看登录请求，可以发现 password 字段被加密处理</p>
+<p><img src="../../../../../../../img/qianduanjiami/2.png" alt=""></p>
+<p>通过搜索登录路径，定位到加密函数，可以看出调用了JS-MD5库</p>
+<p><img src="../../../../img/qianduanjiami/3.png" alt=""></p>
+<p>对password 字段的处理相当于md5(md5()) ,二次md5</p>
+<p><img src="../../../../img/qianduanjiami/5.png" alt=""></p>
+<p>在控制台，对js中的函数和值进行输出，看是否可以得到我们需要的结果</p>
+<p><img src="../../../../img/qianduanjiami/6.png" alt=""></p>
+<p>接下来在burp中的 payload processing hash 2次即可</p>
+<hr>
+<h2 id="des-案例">DES 案例</h2>
+<p>抓包查看登录请求</p>
+<p><img src="../../../../img/qianduanjiami/7.png" alt=""></p>
+<p>可以看到目标站点对username和password都进行了加密</p>
+<p>查看调用的js代码</p>
+<p><img src="../../../../img/qianduanjiami/8.png" alt=""></p>
+<p>可以发现是 des 加密，调用 des.js</p>
+<p>那么其实现在在控制台就可以调用加密函数了</p>
+<pre tabindex="0"><code>DES.Encrypt(&quot;admin&quot;)
+</code></pre><p><img src="../../../../img/qianduanjiami/9.png" alt=""></p>
+<p>查看 des.js 文件</p>
+<p><img src="../../../../img/qianduanjiami/10.png" alt=""></p>
+<p>做了混淆，搜了下，是类似 eval(function(p,a,c,k,e,r){}) 的加密，有在线还原的站点</p>
+<ul>
+<li><a href="https://wangye.org/tools/scripts/eval/">https://wangye.org/tools/scripts/eval/</a></li>
+</ul>
+<p><img src="../../../../img/qianduanjiami/11.png" alt=""></p>
+<p>得到DES的密钥值</p>
+<hr>
+<h2 id="aes-案例">AES 案例</h2>
+<p>抓包查看登录请求</p>
+<p><img src="../../../../img/qianduanjiami/12.png" alt=""></p>
+<p>可以看到目标站点对username和password都进行了加密</p>
+<p>查看调用的js代码</p>
+<p><img src="../../../../img/qianduanjiami/13.png" alt=""></p>
+<p>从以上代码可以看出userLogin()函数中调用encrypt()函数对用户名和进行了加密，接下来全局追踪并查看encrypt()函数</p>
+<p><img src="../../../../img/qianduanjiami/14.png" alt=""></p>
+<p>可以看出使用了AES加密，ECB模式，填充模式pkcs7padding，密钥key=1234567887654321</p>
+<p><img src="../../../../img/qianduanjiami/15.png" alt=""></p>
+<p>同时，控制台也可调函数进行加密</p>
+<pre tabindex="0"><code>encrypt('admin')
+</code></pre><p><img src="../../../../img/qianduanjiami/16.png" alt=""></p>
+<p>也可以结合BurpCrypto插件爆破账号密码</p>
+<ul>
+<li><a href="https://github.com/whwlsfb/BurpCrypto">https://github.com/whwlsfb/BurpCrypto</a></li>
+</ul>
+<p><img src="../../../../img/qianduanjiami/17.png" alt=""></p>
+<p><img src="../../../../img/qianduanjiami/18.png" alt=""></p>
+<hr>
+<h2 id="rsa-案例">RSA 案例</h2>
+<p>抓包查看登录请求</p>
+<p><img src="../../../../img/qianduanjiami/19.png" alt=""></p>
+<p>可以看到目标站点对username和password都进行了加密,并且结果很长，很大可能是rsa加密</p>
+<p>查看调用的js代码</p>
+<p><img src="../../../../img/qianduanjiami/20.png" alt=""></p>
+<p>可以看到publickey和encodeRSA关键字，目标站点对用户和密码都进行了rsa加密</p>
+<p>此时，控制台可调函数进行加密</p>
+<pre tabindex="0"><code class="language-var" data-lang="var">encodeRSA('admin', publicKey)
+</code></pre><p><img src="../../../../img/qianduanjiami/21.png" alt=""></p>
+<p>JSEncrypt的默认RSA加密机制是RSAES-PKCS1-V1_5，而且还会进行base64编码</p>
+<p><img src="../../../../img/qianduanjiami/22.png" alt=""></p>
+<hr>
+<h2 id="签名">签名</h2>
+<p>sig类似 作用：防篡改请求包</p>
+<blockquote>
+<p>关键字：sign signature</p>
+</blockquote>
+<p>目标小程序存在签名，需要伪造进行越权测试</p>
+<p>反编译审计代码，搜索sign签名算法</p>
+<p><img src="../../../../img/qianduanjiami/23.png" alt=""></p>
+<p>a.data 判断有没有 post 内容，有就第一个表达式，没有则第二个表达式, i 是 xxxx123456 u 是 url.substr(1) 后面加 post 的内容 i 是时间 算个 md5 后面的表达式 xxxx 拼接 xxxx123456 url 以及时间戳</p>
+<p>本地调用js，生成任意手机号签名</p>
+<p><img src="../../../../img/qianduanjiami/24.png" alt=""></p>
+<p>通过伪造的签名，可具备任意用户权限，可查看、修改任意用户信息</p>
+<p><img src="../../../../img/qianduanjiami/25.png" alt=""></p>
+<hr>
+<h1 id="总结">总结</h1>
+<p>前端加密用JSEncrypt库的很多，为了节省时间，可以直接试试搜一些jsencrypt相关的方法名，如setPublicKey、encrypt等,定位加密函数</p>
+<p>关键字：Crypto AES DES RSA key password encrypt</p>
+<p>前端加密作为在用户侧的防御手段,既增加攻击成本，又不影响业务，可谓是一种符合所有场景的防御办法，但前端传递参数的加密也需要配合js代码的混淆，否则攻击者依然可以轻易的绕过。</p>
+
+  </article>
+
+  
+  
+    
+    
+    
+  
+  
+
+
+</div>
+
+  </main><div class="footer gradient-2">
+  <div class="container footer-container ">
+    <div class="row">
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <div class="footer-title">网站地图</div>
+        <ul class="list-unstyled">
+            
+              
+                <li><a href="https://kitezzzgrim.ffffffff0x.com/tags/">标签</a></li>
+              
+              
+                <li><a href="https://kitezzzgrim.ffffffff0x.com/categories/">分类</a></li>
+              
+            
+            
+            
+            <li><a rel="alternate" type="application/rss&#43;xml" href="https://kitezzzgrim.ffffffff0x.com/index.xml"><i class="fas fa-rss-square"></i> RSS订阅</a></li>
+            
+            
+            
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        
+        <div class="footer-title">社群</div>
+        <ul class="list-unstyled">
+          
+          <li><a href="https://github.com/kitezzzGrim" rel="noopener" target="_blank">GitHub</a></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        
+        <div class="footer-title">友链</div>
+        <ul class="list-unstyled">
+          
+          <li><a href="https://github.com/kitezzzGrim" rel="noopener" target="_blank">关于我</a></li>
+          
+        </ul>
+        
+      </div> 
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <p class="pull-right text-right">
+          <small><em>Proudly powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a></em></small><br/>
+          <small><em>Theme - <a href="https://github.com/shaform/hugo-theme-den" rel="noopener" target="_blank">Den</a></em></small><br/>
+          <small>
+            &copy; 
+            kitezzzGrim
+            2022
+          </small>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

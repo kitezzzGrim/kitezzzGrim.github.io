@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on kitezzzGrim</title>
+    <link>https://kitezzzgrim.ffffffff0x.com/posts/</link>
+    <description>Recent content in Posts on kitezzzGrim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 02 Oct 2022 00:54:13 +0800</lastBuildDate><atom:link href="https://kitezzzgrim.ffffffff0x.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>几种常见的前端加密场景</title>
+      <link>https://kitezzzgrim.ffffffff0x.com/2022/10/02/%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E7%9A%84%E5%89%8D%E7%AB%AF%E5%8A%A0%E5%AF%86%E5%9C%BA%E6%99%AF/</link>
+      <pubDate>Sun, 02 Oct 2022 00:54:13 +0800</pubDate>
+      
+      <guid>https://kitezzzgrim.ffffffff0x.com/2022/10/02/%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E7%9A%84%E5%89%8D%E7%AB%AF%E5%8A%A0%E5%AF%86%E5%9C%BA%E6%99%AF/</guid>
+      <description>首发: https://www.anquanke.com/post/id/280470 五种常见的前端加密场景 前端的加解密是比较常见的，无论是web的后台，还是小程序，都常常存在，加解密传输，签名，防篡改，这些机制，导致</description>
+    </item>
+    
+  </channel>
+</rss>

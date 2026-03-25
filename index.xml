@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>首页 on 风筝的博客</title>
+    <link>https://kitezzzGrim.github.io/</link>
+    <description>Recent content in 首页 on 风筝的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 风筝</copyright>
+    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://kitezzzGrim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>我的第一篇文章</title>
+      <link>https://kitezzzGrim.github.io/posts/first-post/</link>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://kitezzzGrim.github.io/posts/first-post/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://kitezzzGrim.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kitezzzGrim.github.io/about/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

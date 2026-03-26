@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 风筝</copyright>
-    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://kitezzzGrim.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://kitezzzGrim.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>提示词注入攻击完整指南</title>
+      <link>https://kitezzzGrim.github.io/posts/prompt-injection-guide/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://kitezzzGrim.github.io/posts/prompt-injection-guide/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>我的第一篇文章</title>

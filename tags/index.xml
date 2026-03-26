@@ -7,7 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 风筝</copyright>
-    <atom:link href="https://kitezzzGrim.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://kitezzzGrim.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AI安全</title>
+      <link>https://kitezzzGrim.github.io/tags/ai%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://kitezzzGrim.github.io/tags/ai%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>LLM</title>
+      <link>https://kitezzzGrim.github.io/tags/llm/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://kitezzzGrim.github.io/tags/llm/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Prompt注入</title>
+      <link>https://kitezzzGrim.github.io/tags/prompt%E6%B3%A8%E5%85%A5/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://kitezzzGrim.github.io/tags/prompt%E6%B3%A8%E5%85%A5/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Web安全</title>
+      <link>https://kitezzzGrim.github.io/tags/web%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://kitezzzGrim.github.io/tags/web%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>

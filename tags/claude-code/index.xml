@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Claude Code on 风筝的博客</title>
+    <link>http://localhost:58212/tags/claude-code/</link>
+    <description>Recent content in Claude Code on 风筝的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 风筝</copyright>
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:58212/tags/claude-code/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AI 知识库</title>
+      <link>http://localhost:58212/posts/ai-knowledge-base/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:58212/posts/ai-knowledge-base/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
